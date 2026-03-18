@@ -5,6 +5,7 @@ import br.edu.utfpr.pb.pw45s.server.mapper.CategoryMapper;
 import br.edu.utfpr.pb.pw45s.server.model.Category;
 import br.edu.utfpr.pb.pw45s.server.service.ICategoryService;
 import br.edu.utfpr.pb.pw45s.server.service.ICrudService;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -34,5 +35,10 @@ public class CategoryController extends CrudController<Category, CategoryDTO, Lo
     @Override
     protected Category toEntity(CategoryDTO dto) {
         return categoryMapper.toEntity(dto);
+    }
+
+    @Override
+    public ResponseEntity<CategoryDTO> create(CategoryDTO entity) {
+        return super.create(entity);
     }
 }

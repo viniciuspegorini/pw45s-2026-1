@@ -66,16 +66,20 @@
 ## 1 - Seminário
 ### Escolha uma linguagem, plataforma e/ou framework para desenvolvimento Web (Java, PHP, Node.js, Perl, Ruby on Rails, .NET(C♯, VB), Python, etc.) ou Híbrido (Android, IOs):
 
-- ADRIANA DANTAS MAROTTI - Vue.js
-- ANA LUISA DARIVA RAMOS - Go
-- ARTHUR CRISTIANO - Node.js
-- DAVI AUGUSTO LIRA - Kotlin Multiplatform (KMP)
-- EMANOEL MULLER MARCOMIN - Laravel
-- ISACK ARAUJO COSTA - ASP.NET Core, C#
-- JEFFERSON HENRIQUE DE ALBUQUERQUE - NestJS
-- JOAO VITOR DENGO - Quarkus
-- LUCAS HENRIQUE BOTEZINI - Django
-- THIAGO CAUN FRANKLIN MAGDALENA - CherryPy
+- ALLAN VITOR PIRAN LEMES - Spark
+- BEATRIZ MAROSTICA - Laravel
+- EDUARDO MATEUS IMMIG - Hono
+- EVERTON HIROYUKI MOREIRA NERES NAGAMINI - Nest.js
+- GISELI SOUZA DE MATOS - Cypress
+- GUILHERME BERNIERI - KMP
+- GUSTAVO DOS SANTOS GUEDES - PHP + ?
+- GUSTAVO MALAGE - Django
+- HUMBERTO SABBI DE ALMEIDA - .Net Core (C#)
+- JOAO PEDRO MASSMANN - Angular
+- LUCAS MATHEUS DE CAMARGO - Go
+- MATHEUS HENRIQUE DELLA VECHIA DE OLIVEIRA - Quarkus
+- RICHARDSON SILVEIRA ROMIG - Node.js 
+- VALBER SALES JUNIOR - Flutter
 
 1. [Deverá ser entregue] Desenvolver uma apresentação (PPT, PDF ou Readme.MD no git) contendo uma breve apresentação do *framework*/biblioteca escolhida:
 - As vantagens e desvantagens da linguagem, *framework* e/ou plataforma. 
@@ -96,7 +100,7 @@
 
 ### 📆 Prazo de entrega:
 
-#### 📌 Entrega com apresentação: 15/09/2025 e 16/09/2025 (Peso 0.30)
+#### 📌 Entrega com apresentação: 13/04/2026 e 14/04/2026 (Peso 0.30)
 
 
 
@@ -163,4 +167,4 @@ Sempre que a situação de um pedido seja alterada o cliente que efetuou o pedid
 
 ### 📆 Prazo de entrega:
 
-#### 📌 Entrega com apresentação: 08/12/2025 (Peso 0.70)
+#### 📌 Entrega com apresentação: 30/06/2026 (Peso 0.70)

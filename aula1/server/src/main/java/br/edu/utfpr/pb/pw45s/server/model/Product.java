@@ -23,7 +23,7 @@ public class Product {
     private String name;
 
     @NotNull
-    @Column(length = 1024)
+    @Column(name = "description", length = 1024)
     private String description;
 
     @NotNull

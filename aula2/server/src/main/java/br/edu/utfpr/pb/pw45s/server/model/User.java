@@ -11,6 +11,8 @@ import org.springframework.security.core.authority.AuthorityUtils;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.Collection;
+import java.util.Collections;
+import java.util.Set;
 
 @Entity
 @Table(name = "tb_user")
@@ -39,12 +41,24 @@ public class User implements UserDetails {
     @Pattern(regexp = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d).*$")
     private String password;
 
+    @ManyToMany(fetch = FetchType.EAGER,  cascade = {
+            CascadeType.PERSIST,  CascadeType.MERGE,
+            CascadeType.REFRESH, CascadeType.DETACH
+    })
+    @JoinTable(name = "tb_user_authorities",
+            joinColumns =
+                @JoinColumn(name = "user_id", referencedColumnName = "id"),
+            inverseJoinColumns =
+                @JoinColumn(name = "authority_id", referencedColumnName = "id")
+            )
+    private Set<Authority> userAuthorities;
+
     @Override
     @Transient
     @JsonIgnore
     @NonNull
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return AuthorityUtils.createAuthorityList("ROLE_USER");
+        return this.userAuthorities != null ? this.userAuthorities : Collections.emptySet();
     }
 
     @Override

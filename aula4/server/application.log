@@ -1,0 +1,90 @@
+2026-03-30T16:21:46.446-03:00  INFO 9004 --- [restartedMain] b.e.u.pb.pw45s.server.ServerApplication  : Starting ServerApplication using Java 24.0.2 with PID 9004 (D:\dev\utfpr\aulas\pw45s\aula4\server\target\classes started by vinic in D:\dev\utfpr\aulas\pw45s\aula4\server)
+2026-03-30T16:21:46.449-03:00  INFO 9004 --- [restartedMain] b.e.u.pb.pw45s.server.ServerApplication  : The following 1 profile is active: "dev"
+2026-03-30T16:21:46.514-03:00  INFO 9004 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-03-30T16:21:46.514-03:00  INFO 9004 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-03-30T16:21:48.044-03:00  INFO 9004 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-30T16:21:48.120-03:00  INFO 9004 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65 ms. Found 4 JPA repository interfaces.
+2026-03-30T16:21:48.729-03:00  INFO 9004 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-30T16:21:48.744-03:00  INFO 9004 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-30T16:21:48.744-03:00  INFO 9004 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2026-03-30T16:21:48.798-03:00  INFO 9004 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-30T16:21:48.798-03:00  INFO 9004 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2278 ms
+2026-03-30T16:21:49.203-03:00  INFO 9004 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-30T16:21:49.381-03:00  INFO 9004 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:pw45s user=SA
+2026-03-30T16:21:49.390-03:00  INFO 9004 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-30T16:21:49.463-03:00  INFO 9004 --- [restartedMain] org.flywaydb.core.FlywayExecutor         : Database: jdbc:h2:mem:pw45s (H2 2.3)
+2026-03-30T16:21:49.526-03:00  INFO 9004 --- [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory         : Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+2026-03-30T16:21:49.530-03:00  INFO 9004 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.029s)
+2026-03-30T16:21:49.540-03:00  INFO 9004 --- [restartedMain] org.flywaydb.core.Flyway                 : All configured schemas are empty; baseline operation skipped. A baseline or migration script with a lower version than the baseline version may execute if available. Check the Schemas parameter if this is not intended.
+2026-03-30T16:21:49.542-03:00  INFO 9004 --- [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2026-03-30T16:21:49.586-03:00  INFO 9004 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": << Empty Schema >>
+2026-03-30T16:21:49.602-03:00  INFO 9004 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "1.0 - Init"
+2026-03-30T16:21:49.645-03:00  INFO 9004 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "1.1 - Data"
+2026-03-30T16:21:49.666-03:00  INFO 9004 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Successfully applied 2 migrations to schema "PUBLIC", now at version v1.1 (execution time 00:00.046s)
+2026-03-30T16:21:49.770-03:00  INFO 9004 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-30T16:21:49.826-03:00  INFO 9004 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2026-03-30T16:21:49.838-03:00  WARN 9004 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.validation.mode], use [jakarta.persistence.validation.mode] instead
+2026-03-30T16:21:49.878-03:00  INFO 9004 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-30T16:21:50.388-03:00  INFO 9004 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-30T16:21:50.482-03:00  INFO 9004 --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-30T16:21:51.968-03:00  INFO 9004 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-30T16:21:51.971-03:00  INFO 9004 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-30T16:21:52.572-03:00  WARN 9004 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-30T16:21:52.909-03:00  INFO 9004 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2026-03-30T16:21:52.959-03:00  INFO 9004 --- [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name authService
+2026-03-30T16:21:53.585-03:00  INFO 9004 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:pw45s'
+2026-03-30T16:21:53.614-03:00  INFO 9004 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-03-30T16:21:53.678-03:00  INFO 9004 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-03-30T16:21:53.691-03:00  INFO 9004 --- [restartedMain] b.e.u.pb.pw45s.server.ServerApplication  : Started ServerApplication in 7.984 seconds (process running for 9.899)
+2026-03-30T16:21:53.769-03:00  WARN 9004 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Failed to register application as Application(name=spring-boot-application, managementUrl=http://172.20.192.1:8080/actuator, healthUrl=http://172.20.192.1:8080/actuator/health, serviceUrl=http://172.20.192.1:8080/) at spring-boot-admin ([http://127.0.0.1:8081/instances]): I/O error on POST request for "http://127.0.0.1:8081/instances": null. Further attempts are logged on DEBUG level
+
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://127.0.0.1:8081/instances": null
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.createResourceAccessException(DefaultRestClient.java:704) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:589) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchange(DefaultRestClient.java:540) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.client.RestClient$RequestHeadersSpec.exchange(RestClient.java:680) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.executeAndExtract(DefaultRestClient.java:821) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.body(DefaultRestClient.java:765) ~[spring-web-6.2.11.jar:6.2.11]
+	at de.codecentric.boot.admin.client.registration.RestClientRegistrationClient.register(RestClientRegistrationClient.java:45) ~[spring-boot-admin-client-3.4.5.jar:3.4.5]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationRegistrator.register(DefaultApplicationRegistrator.java:80) ~[spring-boot-admin-client-3.4.5.jar:3.4.5]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationRegistrator.register(DefaultApplicationRegistrator.java:61) ~[spring-boot-admin-client-3.4.5.jar:3.4.5]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-6.2.11.jar:6.2.11]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:369) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:310) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
+Caused by: java.net.ConnectException: null
+	at java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1069) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:215) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.checkRetryConnect(PlainHttpConnection.java:268) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$0(PlainHttpConnection.java:226) ~[java.net.http:na]
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:980) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:957) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:556) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1819) ~[na:na]
+	... 3 common frames omitted
+Caused by: java.nio.channels.ClosedChannelException: null
+	at java.base/sun.nio.ch.SocketChannelImpl.ensureOpen(SocketChannelImpl.java:204) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:942) ~[na:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:203) ~[java.net.http:na]
+	... 9 common frames omitted
+
+2026-03-30T16:21:54.247-03:00  INFO 9004 --- [RMI TCP Connection(4)-172.20.192.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-30T16:21:54.247-03:00  INFO 9004 --- [RMI TCP Connection(4)-172.20.192.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-30T16:21:54.249-03:00  INFO 9004 --- [RMI TCP Connection(4)-172.20.192.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-03-30T16:29:16.706-03:00  INFO 9004 --- [http-nio-8080-exec-1] b.e.u.p.p.s.s.s.GoogleTokenVerifier      : Validating token: eyJhbGciOiJSUzI1NiIsImtpZCI6ImExMGU1OGRmNTVlNzI4NTY2ZWM1NmJkYTZlYjNiZDQ1NDM5ZjM1ZDciLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzMTAxMDk5MjM2NzQtbGE1dGhsNHM0dDBiMmFqcDZhY2RocTd0cmE3NGRuMzEuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIzMTAxMDk5MjM2NzQtbGE1dGhsNHM0dDBiMmFqcDZhY2RocTd0cmE3NGRuMzEuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMDE4Nzc3NDk4MTQ1NjA1NzM2MTUiLCJlbWFpbCI6InZpbmljaXVzcGVnb3JpbmlAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5iZiI6MTc3NDg5ODY1NiwibmFtZSI6IlZpbmljaXVzIFBlZ29yaW5pIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0tOWm9aN05UcFBXMW9iRmhQWlB6cTVQNnctZF9jSUNQajZ2akZLWTZuWGJmcmc3RU02PXM5Ni1jIiwiZ2l2ZW5fbmFtZSI6IlZpbmljaXVzIiwiZmFtaWx5X25hbWUiOiJQZWdvcmluaSIsImlhdCI6MTc3NDg5ODk1NiwiZXhwIjoxNzc0OTAyNTU2LCJqdGkiOiIzNTc1NjRlYTJjNjM3N2NjY2Y1M2I3OWEyN2IyMzhkZmM4YTI1ZTgyIn0.S720CBW-1I0XaWjiW9FWyAv8poHtF-dhW1htHJCRWDxQgKWKnQfSLS5y2g5tiXWV_TSgdgTSnKSmFGq25K9gzikVABFa3J1IfYBHnQ4y_p5WQFXIS0oRPifwg-LQjVMHif1qAmYS_JndM-U2287jeYex8afv6ozAjcjrOayNzAlhRz-7MP3svcVopv9DAh4cAPPih09k9j0hbAv9fcTbK_Jp3CQ9cpUsCub7QCuUOL13dQeuiRB7CGTLGRyytl_7nuBj7KlNcxnEZt-O6rtG3qC6cnuedcZ6LEXylHppsiYlQbaaWO0tXesqpz_y5_zDo_Jt6hfmbB-vT9iIyrJp8g
+2026-03-30T16:29:35.504-03:00  INFO 9004 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-30T16:29:35.517-03:00  INFO 9004 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-03-30T16:29:35.524-03:00  INFO 9004 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-30T16:29:35.529-03:00  WARN 9004 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2026-03-30T16:29:35.530-03:00  INFO 9004 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-30T16:29:35.532-03:00  INFO 9004 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

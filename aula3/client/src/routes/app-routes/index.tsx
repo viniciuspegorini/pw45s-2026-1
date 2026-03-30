@@ -27,7 +27,7 @@ export function AppRoutes() {
 
         {/* protected routes - Roles: User and Admin */}
         <Route
-          element={<RequireAuth />}
+          element={<RequireAuth allowedRoles={[ROLES.User, ROLES.Admin]} />}
         >
           <Route path="/" element={<HomePage />} />
           <Route path="/home" element={<HomePage />} />
@@ -38,17 +38,18 @@ export function AppRoutes() {
           <Route path="/categories/new" element={<CategoryFormPage />} />
           <Route path="/categories/:id" element={<CategoryFormPage />} />
 
-          <Route path="/products" element={<ProductListPage />} />
-          <Route path="/products/new" element={<ProductFormPage />} />
-          <Route path="/products/:id" element={<ProductFormPage />} />
+          
 
           {/* catch all */}
           <Route path="*" element={<NotFound />} />
         </Route>
 
-        {/* protected routes - Roles: User and Admin */}
-        <Route element={<RequireAuth />}>
+        {/* protected routes - Roles: Admin */}
+        <Route element={<RequireAuth allowedRoles={[ROLES.Admin]} />}>
           <Route path="/products/show" element={<ProductShow />} />
+          <Route path="/products" element={<ProductListPage />} />
+          <Route path="/products/new" element={<ProductFormPage />} />
+          <Route path="/products/:id" element={<ProductFormPage />} />
         </Route>
       </Route>
     </Routes>

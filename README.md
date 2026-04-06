@@ -31,28 +31,28 @@
 - Documentação da API REST com Open API 3.0 + versionamento do Banco de Dados com Flyway.
 
 ### aula2
-- Admininstração das aplicações com Spring Boot Admin e Registros de Log.
-
-### aula3
 - Adição de permissões de usuário. Criação de uma classe para representar as permissões de usuário e associação da mesma na entidade de usuário.
 
+### aula3
+- Autenticação e autorização com validações das permissões no lado cliente.
+
 ### aula4
-- Autenticação e autorização com validações das permissões no lado cliente e adição da Context API.
+- **Autenticação utilizando o Google - lado cliente**. Criação da conta no Google Cloud Console e uso das credenciais na aplicação cliente para autenticação (retorno do idToken pelo Google) e na aplicação servidor para validação do idToken.
 
 ### aula5
-- **Autenticação utilizando redes sociais (Google) - lado cliente**. Criação da conta no Google Cloud Console e uso das credenciais na aplicação cliente para autenticação (retorno do idToken pelo Google) e na aplicação servidor para validação do idToken.
+- **Autenticação utilizando o Google - lado servidor**. Criação da conta no Google Cloud Console e uso das credenciais na aplicação servidor para autenticação (retorno do idToken pelo Google).
 
 ### aula6
-- **Autenticação utilizando redes sociais (Google) - lado servidor**. Criação da conta no Google Cloud Console e uso das credenciais na aplicação servidor para autenticação (retorno do idToken pelo Google).
-
-### aula7
 - Upload de arquivos com armazenamento em **Banco de dados** e em Disco no **Sistema de arquivos**.
 
-### aula8
+### aula7
 - Upload de arquivos com armazenamento em um **sistema de armazenamento de objetos** utilizando **MINIO** (sistema de armazenamento de objetos **semelhante ao Amazon S3**).
 
-### aula9
+### aula8
 - Integração da API REST com APIs de processamento de Inteligência Artificial (IA).
+
+### aula9
+- Admininstração das aplicações com Spring Boot Admin e Registros de Log.
 
 ### aula10
 - Deploy de aplicações utilizando Docker.
@@ -135,6 +135,10 @@ Sempre que a situação de um pedido seja alterada o cliente que efetuou o pedid
 4.  📈**Logs**
 	-	Gerenciar a gravação de Log nas operações de atualização dos pedidos e envio de emails.
 
+5. 🗒️**Documentação e Versionamento do Banco de dados**
+    - Documentar a API utilizando Open API 3.x.
+    - Realizar o versionamento do banco de dados.
+   
 ### 📋Sugestões de arquitetura
 
 -   💻***Fron-tend***: React + TypeScript.    

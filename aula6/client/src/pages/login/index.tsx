@@ -9,7 +9,8 @@ import type { AuthenticationResponse, IUserLogin } from "@/commons/types";
 import { useAuth } from "@/context/hooks/use-auth";
 import AuthService from "@/services/auth-service";
 import { Toast } from "primereact/toast";
-import { CredentialResponse, GoogleLogin } from "@react-oauth/google";
+
+import { GoogleLogin, CredentialResponse } from "@react-oauth/google";
 
 export const LoginPage = () => {
   const {
@@ -24,11 +25,14 @@ export const LoginPage = () => {
   
   const { handleLogin, handleLoginSocial } = useAuth();
 
-  const onSuccess = async (credentialResponse: CredentialResponse) => {
-    console.log(credentialResponse);
-    if (credentialResponse.credential) {
-      handleLoginSocial(credentialResponse.credential);
+  //Autenticação GOOGLE
+  const onSuccess = (response: CredentialResponse) => {
+    console.log(response);
+
+    if (response.credential) {
+      handleLoginSocial(response.credential);
     }
+
   }
 
   const onSubmit = async (userLogin: IUserLogin) => {
@@ -130,16 +134,17 @@ export const LoginPage = () => {
             disabled={loading || isSubmitting}
           />
           <div className="mb-3">
-            <GoogleLogin
-              locale="pt-BR"
-              onSuccess={onSuccess}
+          <GoogleLogin
+            locale="pt-BR"
+            onSuccess={onSuccess}
               onError={() => {
                 toast.current?.show({
                   severity: "error",
                   summary: "Erro",
-                  detail: "Falha ao efetuar login com o Google.",
+                  detail: "Falha ao efetuar autenticação com o Google.",
                   life: 3000,
                 });
+                console.log("Google login failed.");
               }}
             />
           </div>

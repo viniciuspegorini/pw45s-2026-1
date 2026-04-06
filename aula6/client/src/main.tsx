@@ -29,7 +29,7 @@ createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <BrowserRouter>
       <PrimeReactProvider>
-        <GoogleOAuthProvider clientId="310109923674-66b8cemcsb8jepvjceruatgju3613290.apps.googleusercontent.com">      
+        <GoogleOAuthProvider clientId="310109923674-la5thl4s4t0b2ajp6acdhq7tra74dn31.apps.googleusercontent.com">
           <AuthProvider>
             <App />
           </AuthProvider>

@@ -31,6 +31,29 @@ const save = async (product: IProduct): Promise<IResponse> => {
 };
 
 
+const saveAndUpload = async (formData: FormData): Promise<IResponse> => {
+  let response = {} as IResponse;
+  try {
+    const data = 
+            await api.post(`${productURL}/upload-db`, formData);
+    response = {
+      status: 200,
+      success: true,
+      message: "Produto salvo com sucesso!",
+      data: data.data,
+    };
+  } catch (err: any) {
+    response = {
+      status: err.response.status,
+      success: false,
+      message: "Falha ao salvar produto",
+      data: err.response.data,
+    };
+  }
+  return response;
+};
+
+
 /**
  * Função para buscar todos os produtos
  * @returns - Retorna uma Promise com a resposta da API
@@ -112,6 +135,7 @@ const findById = async (id: number): Promise<IResponse> => {
 // Objeto que exporta todas as funções
 const ProductService = {
   save,
+  saveAndUpload,
   findAll,
   remove,
   findById,

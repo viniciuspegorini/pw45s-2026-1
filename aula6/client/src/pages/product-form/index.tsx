@@ -27,7 +27,7 @@ export const ProductFormPage = () => {
     defaultValues: { name: "", description: "", price: 0, category: undefined },
   });
   const { findAll } = CategoryService;
-  const { findById, save } = ProductService;
+  const { findById, saveAndUpload } = ProductService;
 
   const [image, setImage] = useState<any | null>(null);
 
@@ -74,12 +74,27 @@ export const ProductFormPage = () => {
     }
   };
  
+  const onFileChangeHandler = (e: ChangeEvent<HTMLInputElement>) => {
+    setImage(e.target.files ? e.target.files[0] : null);
+  }
+
   const onSubmit = async (data: IProduct) => {
     setLoading(true);
     try {
-      
+      const formData = new FormData();
+      formData.append("image", image);
+
+      const blob = new Blob([JSON.stringify(data)], { type: "application/json" });
+      formData.append("product", blob);
+      const response = await saveAndUpload(formData);
+
+
+      if (response.success) {
+        toast.current?.show({ severity: "success", summary: "Sucesso", detail: response.message, life: 3000 });
+        navigate("/products");
+      }
     } catch {
-      
+      toast.current?.show({ severity: "error", summary: "Erro", detail: "Falha ao salvar o registro.", life: 3000 });
     } finally {
       setLoading(false);
     }
@@ -169,7 +184,27 @@ export const ProductFormPage = () => {
             )}
           </div>
           <div>
-            <label className="block mb-1">Imagem</label>
+            <label htmlFor="image" className="block mb-1">
+              Imagem
+            </label>
+            <input
+              id="image"
+              name="image"
+              type="file"
+              accept="image/*"
+              className="w-full"
+              onChange={onFileChangeHandler}
+            />
+            <div className="mt-2">
+                {product?.imageFile && (
+                  <img
+                    src={`data:image/jpeg;base64,${product.imageFile}`}
+                    style={{ maxWidth: "100px", maxHeight: "100px" }}
+                    alt="Imagem do produto"
+                    className="w-32 h-32 object-cover rounded"
+                  />
+                )}
+            </div>
           </div>
 
           <div className="flex justify-end gap-2 mt-4">

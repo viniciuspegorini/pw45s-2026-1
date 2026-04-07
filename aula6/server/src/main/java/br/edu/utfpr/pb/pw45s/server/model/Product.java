@@ -30,4 +30,13 @@ public class Product {
     @JoinColumn(name = "category_id")
     private Category category;
 
+    @Column(name = "image_name")
+    private String imageName; //Upload no sistema de arquivos
+
+    @Lob
+    @Column(name = "image_file")
+    private byte[] imageFile; //Upload no banco de dados
+
+    @Column(name = "image_file_name")
+    private String imageFileName; //Upload no banco de dados
 }

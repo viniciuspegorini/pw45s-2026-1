@@ -26,4 +26,12 @@ public class ProductDto {
 
     private CategoryDto category;
 
+    private String imageName; //Upload no sistema de arquivos
+
+    private byte[] imageFile; //Upload no banco de dados
+
+    private String imageFileName; //Upload no banco de dados
+
+
+
 }

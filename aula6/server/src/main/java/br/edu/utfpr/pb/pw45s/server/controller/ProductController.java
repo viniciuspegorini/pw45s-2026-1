@@ -6,6 +6,7 @@ import br.edu.utfpr.pb.pw45s.server.service.CrudService;
 import br.edu.utfpr.pb.pw45s.server.service.ProductService;
 import jakarta.validation.Valid;
 import org.modelmapper.ModelMapper;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestPart;
@@ -36,4 +37,19 @@ public class ProductController extends CrudController<Product, ProductDto, Long>
         return this.modelMapper;
     }
 
+    @PostMapping("upload-fs")
+    public ResponseEntity<Product> uploadFs(
+            @RequestPart("image") MultipartFile file,
+            @RequestPart("product") @Valid Product product) {
+        productService.saveImageFileToDisk(file, product);
+        return ResponseEntity.ok(product);
+    }
+
+    @PostMapping("upload-db")
+    public ResponseEntity<Product> uploadDb(
+            @RequestPart("image") MultipartFile file,
+            @RequestPart("product") @Valid Product product) {
+        productService.saveImageFileToDatabase(file, product);
+        return ResponseEntity.ok(product);
+    }
 }

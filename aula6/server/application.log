@@ -1143,3 +1143,57 @@ Caused by: java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intV
 2026-04-06T22:19:49.861-03:00  WARN 43588 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
 2026-04-06T22:19:49.862-03:00  INFO 43588 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2026-04-06T22:19:49.864-03:00  INFO 43588 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-06T22:19:53.416-03:00  INFO 18080 --- [restartedMain] b.e.u.pb.pw45s.server.ServerApplication  : Starting ServerApplication using Java 24.0.2 with PID 18080 (D:\dev\utfpr\aulas\pw45s-2026-1\aula6\server\target\classes started by vinic in D:\dev\utfpr\aulas\pw45s-2026-1\aula6\server)
+2026-04-06T22:19:53.420-03:00  INFO 18080 --- [restartedMain] b.e.u.pb.pw45s.server.ServerApplication  : The following 1 profile is active: "dev"
+2026-04-06T22:19:53.502-03:00  INFO 18080 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-04-06T22:19:53.503-03:00  INFO 18080 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-04-06T22:19:55.358-03:00  INFO 18080 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-06T22:19:55.529-03:00  INFO 18080 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 148 ms. Found 4 JPA repository interfaces.
+2026-04-06T22:19:56.365-03:00  INFO 18080 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-04-06T22:19:56.386-03:00  INFO 18080 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-06T22:19:56.387-03:00  INFO 18080 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2026-04-06T22:19:56.453-03:00  INFO 18080 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-06T22:19:56.454-03:00  INFO 18080 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2949 ms
+2026-04-06T22:19:56.901-03:00  INFO 18080 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-06T22:19:57.065-03:00  INFO 18080 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:pw45s-dev user=SA
+2026-04-06T22:19:57.066-03:00  INFO 18080 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-06T22:19:57.113-03:00  INFO 18080 --- [restartedMain] org.flywaydb.core.FlywayExecutor         : Database: jdbc:h2:mem:pw45s-dev (H2 2.3)
+2026-04-06T22:19:57.160-03:00  INFO 18080 --- [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory         : Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+2026-04-06T22:19:57.166-03:00  INFO 18080 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.029s)
+2026-04-06T22:19:57.174-03:00  INFO 18080 --- [restartedMain] org.flywaydb.core.Flyway                 : All configured schemas are empty; baseline operation skipped. A baseline or migration script with a lower version than the baseline version may execute if available. Check the Schemas parameter if this is not intended.
+2026-04-06T22:19:57.176-03:00  INFO 18080 --- [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2026-04-06T22:19:57.214-03:00  INFO 18080 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": << Empty Schema >>
+2026-04-06T22:19:57.225-03:00  INFO 18080 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "1.0 - Init"
+2026-04-06T22:19:57.250-03:00  INFO 18080 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "1.1 - Data"
+2026-04-06T22:19:57.268-03:00  INFO 18080 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Successfully applied 2 migrations to schema "PUBLIC", now at version v1.1 (execution time 00:00.024s)
+2026-04-06T22:19:57.359-03:00  INFO 18080 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-06T22:19:57.416-03:00  INFO 18080 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2026-04-06T22:19:57.423-03:00  WARN 18080 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.validation.mode], use [jakarta.persistence.validation.mode] instead
+2026-04-06T22:19:57.456-03:00  INFO 18080 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-06T22:19:57.776-03:00  INFO 18080 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-06T22:19:57.913-03:00  INFO 18080 --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-06T22:19:59.042-03:00  INFO 18080 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-06T22:19:59.045-03:00  INFO 18080 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-06T22:19:59.598-03:00  WARN 18080 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-06T22:19:59.944-03:00  INFO 18080 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2026-04-06T22:19:59.988-03:00  INFO 18080 --- [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name authService
+2026-04-06T22:20:00.408-03:00  INFO 18080 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:pw45s-dev'
+2026-04-06T22:20:00.433-03:00  INFO 18080 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-04-06T22:20:00.527-03:00  INFO 18080 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-04-06T22:20:00.544-03:00  INFO 18080 --- [restartedMain] b.e.u.pb.pw45s.server.ServerApplication  : Started ServerApplication in 8.149 seconds (process running for 9.34)
+2026-04-06T22:20:00.963-03:00  INFO 18080 --- [RMI TCP Connection(3)-172.20.192.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-06T22:20:00.964-03:00  INFO 18080 --- [RMI TCP Connection(3)-172.20.192.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-06T22:20:00.967-03:00  INFO 18080 --- [RMI TCP Connection(3)-172.20.192.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-04-06T22:22:28.619-03:00  INFO 18080 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-06T22:22:28.636-03:00  INFO 18080 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-04-06T22:22:28.646-03:00  INFO 18080 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-06T22:22:28.655-03:00  WARN 18080 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2026-04-06T22:22:28.656-03:00  INFO 18080 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-06T22:22:28.658-03:00  INFO 18080 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

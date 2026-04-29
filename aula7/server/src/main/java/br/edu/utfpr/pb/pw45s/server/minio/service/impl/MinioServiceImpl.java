@@ -38,7 +38,8 @@ public class MinioServiceImpl implements MinioService {
             }
             String fileName = multipartFile.getOriginalFilename();
             Long fileSize = multipartFile.getSize();
-            String objectName = UUID.randomUUID().toString().replaceAll("-", "")
+            assert fileName != null;
+            String objectName = UUID.randomUUID().toString().replace("-", "")
                     + fileName.substring(fileName.lastIndexOf("."));
             LocalDateTime createdTime = LocalDateTime.now();
             minioUtil.putObject(bucketName, multipartFile, objectName,fileType);

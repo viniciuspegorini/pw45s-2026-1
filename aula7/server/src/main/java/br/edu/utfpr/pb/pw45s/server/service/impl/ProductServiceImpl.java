@@ -16,6 +16,7 @@ import org.springframework.web.multipart.MultipartFile;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URLEncoder;
+import java.nio.charset.StandardCharsets;
 
 @Service
 @Slf4j
@@ -55,7 +56,7 @@ public class ProductServiceImpl extends CrudServiceImpl<Product, Long>
             Product product = this.findById(id);
             in = minioService.downloadObject("commons", product.getImageName());
             response.setHeader("Content-Disposition", "attachment;filename="
-                    + URLEncoder.encode(product.getImageName(), "UTF-8"));
+                    + URLEncoder.encode(product.getImageName(), StandardCharsets.UTF_8));
             response.setCharacterEncoding("UTF-8");
             // Remove bytes from InputStream Copied to the OutputStream .
             IOUtils.copy(in, response.getOutputStream());

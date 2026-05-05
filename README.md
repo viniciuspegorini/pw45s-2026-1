@@ -69,20 +69,20 @@
 ## 1 - Seminário
 ### Escolha uma linguagem, plataforma e/ou framework para desenvolvimento Web (Java, PHP, Node.js, Perl, Ruby on Rails, .NET(C♯, VB), Python, etc.) ou Híbrido (Android, IOs):
 
-- ALLAN VITOR PIRAN LEMES - Spark
-- BEATRIZ MAROSTICA - Laravel
-- EDUARDO MATEUS IMMIG - Hono
-- EVERTON HIROYUKI MOREIRA NERES NAGAMINI - Nest.js
-- GISELI SOUZA DE MATOS - Cypress
-- GUILHERME BERNIERI - KMP
-- GUSTAVO DOS SANTOS GUEDES - PHP + ?
-- GUSTAVO MALAGE - Django
-- HUMBERTO SABBI DE ALMEIDA - .Net Core (C#)
-- JOAO PEDRO MASSMANN - Angular
-- LUCAS MATHEUS DE CAMARGO - Go
-- MATHEUS HENRIQUE DELLA VECHIA DE OLIVEIRA - Quarkus
-- RICHARDSON SILVEIRA ROMIG - Node.js 
-- VALBER SALES JUNIOR - Flutter
+- ALLAN VITOR PIRAN LEMES - Spark - https://github.com/Allan-Vitor-Piran-Lemes/Spark_Framework
+- BEATRIZ MAROSTICA - Laravel - https://github.com/Beatriz-Marostica/projeto_cadastro_pessoa
+- EDUARDO MATEUS IMMIG - Hono - https://github.com/eimmig/discovery-hono
+- EVERTON HIROYUKI MOREIRA NERES NAGAMINI - Nest.js - https://github.com/nagaminehiro/nestjs-workout-crud
+- GISELI SOUZA DE MATOS - Cypress - https://github.com/GiseliMatos/Cypress_web
+- GUILHERME BERNIERI - Kobweb - https://github.com/guilhermeber/loja-kobweb
+- GUSTAVO DOS SANTOS GUEDES - Sympony -  https://github.com/gustavonts/skeleton
+- GUSTAVO MALAGE - Django - https://github.com/GuMalage/API-em-Django-Framework
+- HUMBERTO SABBI DE ALMEIDA - .Net Core (C#) - https://github.com/Humberto-Alm/Pw45s
+- JOAO PEDRO MASSMANN - Angular - https://github.com/JoaoPedroMassmann/angular_tutorial
+- LUCAS MATHEUS DE CAMARGO - Go - https://github.com/DarkMatter015/go_ai_agent
+- MATHEUS HENRIQUE DELLA VECHIA DE OLIVEIRA - Quarkus - https://github.com/MatheusDellaVechia/user-quarkus
+- RICHARDSON SILVEIRA ROMIG - Node.js - https://github.com/romigrick/PW45S_Atividade_NODEJS
+- VALBER SALES JUNIOR - Flutter - https://github.com/ValberSales/flutter_showcase
 
 1. [Deverá ser entregue] Desenvolver uma apresentação (PPT, PDF ou Readme.MD no git) contendo uma breve apresentação do *framework*/biblioteca escolhida:
 - As vantagens e desvantagens da linguagem, *framework* e/ou plataforma. 
@@ -104,8 +104,6 @@
 ### 📆 Prazo de entrega:
 
 #### 📌 Entrega com apresentação: 13/04/2026 e 14/04/2026 (Peso 0.30)
-
-
 
 ## 2 - Projeto final
 
@@ -145,7 +143,7 @@ Sempre que a situação de um pedido seja alterada o cliente que efetuou o pedid
 ### 📋Sugestões de arquitetura
 
 -   💻***Fron-tend***: React + TypeScript.    
-    -   Tela de cadastro.        
+    -   Tela de cadastro de usuário.        
     -   Tela de autenticação.        
     -   Tela de Painel Administrativo.        
     -   Tela de gerenciamento de usuários.        

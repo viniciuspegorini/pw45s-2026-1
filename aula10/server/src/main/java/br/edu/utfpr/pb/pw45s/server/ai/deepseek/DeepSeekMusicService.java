@@ -41,7 +41,7 @@ public class DeepSeekMusicService {
         PromptTemplate promptTemplate = new PromptTemplate(promptString);
         promptTemplate.add("genre", genre);
         promptTemplate.add("theme", theme);
-        promptTemplate.add("format", outputConverter.getFormat());
+            promptTemplate.add("format", outputConverter.getFormat());
 
         ChatResponse response = aiClient.call(promptTemplate.create());
         return outputConverter.convert(response.getResult().getOutput().getText());
